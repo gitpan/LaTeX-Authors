@@ -9,7 +9,7 @@ NNNNAAAAMMMMEEEE
 SSSSYYYYNNNNOOOOPPPPSSSSIIIISSSS
        Extraction from a string with latex commands:
 
-               use LateX::Authors;
+               use LaTeX::Authors;
                use strict;
                my $tex_string = "\documentclass...";
                my @article = router($tex_string);
@@ -18,7 +18,7 @@ SSSSYYYYNNNNOOOOPPPPSSSSIIIISSSS
 
        Extraction from a latex file:
 
-        use LateX::Authors;
+        use LaTeX::Authors;
                use strict;
                my $file = shift;
                my $tex_string = load_file_string($file);
@@ -28,7 +28,7 @@ SSSSYYYYNNNNOOOOPPPPSSSSIIIISSSS
 
        Extraction from a directory with latex files:
 
-               use LateX::Authors;
+               use LaTeX::Authors;
                use strict;
                my $directory = shift;
                #my $error= un_archive($directory);
@@ -312,4 +312,4 @@ SSSSEEEEEEEE AAAALLLLSSSSOOOO
 
 
 
-2005-03-22                 perl v5.6.1                 Authors(3)
+2005-03-29                 perl v5.6.1                 Authors(3)

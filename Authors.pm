@@ -30,6 +30,7 @@
 # http://natura.di.uminho.pt/~jj/perl/
 #
 # 2003/03/10 : version 0.8 
+# 2005/03/29 : version 0.81 (correct documentation Latex to LaTeX)
 #
 ########################################################################
 
@@ -49,7 +50,7 @@ our  @EXPORT      = qw(&un_archive &find_tex_file &load_file_string &router
 
 use Text::Balanced qw (extract_bracketed); 
 
-our $VERSION = '0.8';
+our $VERSION = '0.81';
 
 =pod 
 
@@ -62,7 +63,7 @@ LaTeX::Authors - Perl extension to extract authors and laboratories in a LaTeX f
 
 Extraction from a string with latex commands:
 	
-	use LateX::Authors;
+	use LaTeX::Authors;
 	use strict;        
 	my $tex_string = "\documentclass...";
 	my @article = router($tex_string);
@@ -72,7 +73,7 @@ Extraction from a string with latex commands:
 	
 Extraction from a latex file:
 
- use LateX::Authors;
+ use LaTeX::Authors;
 	use strict;        
 	my $file = shift;
 	my $tex_string = load_file_string($file);
@@ -83,7 +84,7 @@ Extraction from a latex file:
 	
 Extraction from a directory with latex files:
 			
-	use LateX::Authors;
+	use LaTeX::Authors;
 	use strict;        
 	my $directory = shift;
 	#my $error= un_archive($directory);
